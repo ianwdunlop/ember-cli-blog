@@ -7,11 +7,11 @@ export default Ember.Controller.extend({
     actions: {
         save: function(post) {
             var me = this;
-            var post = this.get('store').createRecord('post', {
-                title: this.get('title'),
-                text: this.get('text')
+            var newPost = this.get('store').createRecord('post', {
+                title: this.get('title')
+ //               text: this.get('text')
             });
-            post.save().then(function(post) {
+            newPost.save().then(function() {
                 me.get('target').transitionTo('posts.index');
             });
         }
