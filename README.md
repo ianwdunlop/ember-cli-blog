@@ -1,7 +1,8 @@
-# Cli-blog
+# Ember CLI blog
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A simple Ember JS based client side blog application using http-mock to handle creating new posts. Based
+on my single page [ember-mvc-blog](https://github.com/ianwdunlop/ember-js-mvc-blog-tutorial) this one demonstrates
+how to recreate it in [Ember CLI](http://www.ember-cli.com/).
 
 ## Prerequisites
 
