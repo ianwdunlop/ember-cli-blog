@@ -5,7 +5,8 @@ module.exports = function(app) {
     var postID = 2;
     var posts = [{
         id: 1,
-        title: 'First Post'
+        title: 'First Post',
+	comments: [1]
     }, {
         id: 2,
         title: 'Second Post'
@@ -42,7 +43,8 @@ module.exports = function(app) {
             res.send({
                 'posts': {
                     id: req.params.id,
-                    title: thisPost.title
+                    title: thisPost.title,
+		    comments: thisPost.comments
                 }
             });
         } else {

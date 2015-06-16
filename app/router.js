@@ -11,6 +11,9 @@ Router.map(function() {
   });
   this.route('post', { path: '/posts/:post_id' }, function() {
     this.route('comment', { path: 'comments/:comment_id' });
+    this.route('comments', function() {
+      this.route('new');
+    });
   });
 });
 
